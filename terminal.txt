@@ -1,0 +1,48 @@
+LINUX SUBSYSTEM
+https://www.theodinproject.com/courses/web-development-101/lessons/prerequisites?ref=lnav
+
+NAVIGATION 
+. for current direct
+.. for direct behind current direct 
+~ home directory
+
+
+
+FILE COMMANDS  
+mnt/c is the current directory when you are using linux subsystem 
+cd /mnt/c  will set you up to work in that directory 
+cd /path will change directory to there 
+cd . 
+ls  lists the files in current repository or listed repository 
+ln -s will links, -s arg makes "soft links"; shortcuts for files; takes the long pathway and then space short pathway: 
+	 ln -s /mnt/c/Users/aphal/Documents/projects_web ~/projects_web
+. for a default 
+open filename opens a file ; open - a SoftwareName FileName to specify app to open file 
+echo "text" 
+clear clears history 
+mkdir 
+	- p filename1/nestedfilename
+touch text.txt ; create file 
+mv filename1 filename2 ; rename files 
+mv filename foldername/filename (or path) ; moves file into that folder *** will overwrite if there's already one with that name!!! us argument - i for warning about this 
+cp filename folder/file ; copy file to new place ; - i 
+rm remove ; -R to remove a whole directory 
+sudo for super-user; password protected action 
+pwd print working directory 
+cat filename will open the file in the command prompt itself 
+cd without args take back to home directory 
+> filename ; writes the output of the commands left o > into the file 
+
+
+
+PROCESSOR COMMANDS 
+ps show all currently running processes
+ps - ef all 
+htop interactive process viewer 
+kill idOfProcessor 
+killall idName; kill all processes with id name 
+
+
+SEARCH COMMANDS 
+grep pattern filename search pattern in filename
+locate filename; find filename 

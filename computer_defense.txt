@@ -1,0 +1,5 @@
+Malware - MalwareBytes 
+	Malware is malicious software which can release viruses, which are self-replicating programs that can infect programs 
+Viruses - Windows Defender (default)
+	It runs well despite being default! 
+Ad-Block - UblockOrigin 

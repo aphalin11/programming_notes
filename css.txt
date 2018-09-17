@@ -1,0 +1,148 @@
+BROWSER PREFIX 
+-moz- mozilla
+-ms- explorer
+-webkit- google/apple safari
+
+
+BOX MODEL 
+display: block; - takes full width in new line 
+	inline; - no new line, takes only width necessary 
+div {
+  border: 6px solid #949599;
+  height: 100px;
+  margin: 20px;
+  padding: 20px; - space inside border 
+  width: 400px;--- top-right-bottom-left 
+}
+div {
+  border: 6px solid #949599;
+}
+div { 
+  box-sizing: content-box; - box model additive (default)
+	      padding-box; - when padding increase, content shrinks
+	      border-box; - border included in width (best in practice)
+}
+#main {
+  max-width: 600px;
+  margin: 0 auto; 
+}
+quick horizontal centering 
+** always set a width on everything ** 
+
+Widths with padding/margin 
+box-sizing: border-box; content-box (default) 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+
+FLOATS AND POSITIONING 
+*** how do i get places where i want it? usually, 
+	floats and or/position attributes in combination with margins *** 
+*** useful def of float: 
+A float is a box that is shifted to the left or right on the current line. 
+The most interesting characteristic of a float (or “floated” or “floating” box) 
+is that content may flow along its side (or be prohibited from doing so by the 
+“clear” property). Content flows down the right side of a left-floated box and 
+down the left side of a right-floated box. *** 
+*** def of clear: 
+By assigning a clear: left property value to our green block, we’ve told it to 
+act as if the pink block is in the normal flow of our document, even though it 
+has been removed, and to sit below it. *** 
+	
+
+float: inherit; right; left; none; 
+clear: left; right; both; inherit; none;
+overflow: hidden; - deals with floating elements at bottom of parent exceeding parent 
+
+#container:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+position: static; - stack atop single col
+	relative; - static but can offset with top right 
+	absolute; - normal flow removed, can place anything anywhere 
+	fixed; - doesn't move with scroll
+	inherit;  - inside element inherit parent 
+
+
+BACKGROUNDS AND GRADIENTS 
+
+div {
+  background-image: url("alert.png");
+  background-position: 20px 10px;
+  background-repeat: no-repeat;
+}
+default pics are put in top left corner of element 
+
+div {
+  background: #648880;
+  background: linear-gradient(to right, #f6f1d3, #648880 85%, #293f50);
+}
+set background color as default in case browser fails; 
+can specify what point the gradient reaches color stop "85%" 
+same color stop = immediate transition 
+
+div {
+  background:  url("foreground.png") 0 0 no-repeat, url("middle-ground.png") 0 0 no-repeat, url("background.png") 0 0 no-repeat;
+}
+multiple background pic first is foremost 
+
+div { 
+  background: url("pic.png")
+  background-size: auto 95% 
+		cover; 
+		contain; 
+  background-clip: padding-box;
+  background-origin: border-box;
+} 
+
+.gradient {
+  background-image:
+    radial-gradient(
+      circle closest-side,
+      yellow,
+      #f06d06
+    );
+}
+
+.repeat {
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      yellow,
+      yellow 10px,
+      red 10px,
+      red 20px /* determines size */
+    );
+}
+
+.repeat {
+  background: 
+    repeating-radial-gradient(
+      circle at 0 0, 
+      #eee,
+      #ccc 50px
+    );
+}
+
+
+https://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/
+
+
+https://alistapart.com/article/css-floats-101
+http://learnlayout.com/toc.html
+http://codeguide.co/#css
+https://cssreference.io/
+
+      
+mobile layouts: 
+http://learnlayout.com/media-queries.html

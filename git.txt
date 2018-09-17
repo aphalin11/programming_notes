@@ -1,0 +1,119 @@
+COMMANDS 
+
+git init initialize 
+git status checks files ; red files are untracked, green files are being tracked/modified but yet to be committed
+git add filename adds a file into the staging area where modifications are tracked 
+git diff filename will show in green added changes to the file you've made, and in red deletions you've made since added to the staging area and last commit. press q to get out of git diff mode. after checking changes and approving, run another git add to add it to the staging area 
+git commit -m "< 50 char explaination of changes"  permanently and descriptively commits the changes back into the permanent git directory 
+git log will give you a chronological log of all the commits and changes to a file 
+	In the output, notice:
+		• A 40-character code, called a SHA, that uniquely identifies the commit. This appears in orange text.
+		• The commit author (you!)
+		• The date and time of the commit
+		• The commit message
+git log HEAD shows all commit changes for the most recent commit 
+git checkout HEAD filename will reverse changes made to where it was in your last commit 
+
+git help verbname
+git --version 
+
+git config --global usern.name "your name" 
+git config --global user.email "email" 
+
+git config --list ; to check 
+
+
+
+
+
+SSH KEYS! 
+https://www.theodinproject.com/courses/web-development-101/lessons/your-first-rails-application
+
+
+
+
+
+
+USING GIT ON LOCAL PROJECTS 
+
+set current directory to the directory folder 
+
+run git init  to drop the git repository folder into that directory, can run ls to check if .git file is present (to stop tracking, remove the directory with rm -rf .git) 
+
+git status checks in on the files and their stages - for files you want to ignore - add a .gitignore file with touch .gitignore; open it with text editor 
+	will ignore all files you list 
+	*.pyc will ignore all python files 
+	
+make changes to files 
+	
+add files into staging area - 
+	git add .filename 
+	git add -A (will add everything in staging area) 
+
+git commit will commit everything 
+
+git reset file.name will remove files from staging area 
+
+
+
+
+
+
+
+USING GIT IN REMOTE REPO 
+
+git clone <url> <path to where you want to clone, can just use . for current directory> 
+
+ do the changes similar to the local 
+
+pull: pull all the changes that have been made since last time you cloned the repository by other people so you push in a fully updated file 
+
+git pull origin master 
+
+git push origin master (once i needed -f origin master)
+
+ 
+
+
+
+
+
+
+
+USING GIT WITH BRANCHING IN REMOTE RPO 
+
+git clone 
+
+do changes 
+
+git branch branch_name 
+
+git checkout branch_name ; changes the directory you're working on is the branch depository 
+
+git push -u origin branch_name ; pushes the branch to the remote depository 
+
+*** companies will unit test your branch, and then will ask you to merge with master *** 
+
+git checkout master 
+
+git pull origin master 
+
+git branch --merged 
+
+git merge branch_name 
+
+git push origin master ; now the merged branch into the master is pushed into the repository 
+
+git branch -d branch_name ; deletes the branch locally 
+
+git push origin --delete branch_name ; removes the branch from the repository 
+
+
+
+
+
+
+PUBLISHING LOCAL FILES TO GIT 
+
+Make the repository on github without intializing with Readme 
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/

@@ -1,0 +1,75 @@
+/*   */ for comments 
+
+<img/> src for url (local or web) pathway, alt  for description
+<!DOCTYPE html> the doctype - nobody cares about them just needed to be added FIRST 
+<html> </html> wraps entire content!!!!!! *
+<head> </head> non-visable content; keywords, page description for search results, CSS link to style, character set declarations, etc. 
+<meta charset = "utf-8"> sets human language feature; no reason not to add 
+<title> </title> title appears browser tab and bookmark title ; put in <head> 
+<body> </body> wraps all content visible to users 
+<h1>-<h6> headings from 1-6 ; 1 is main title, 2 is top level heading, subheading, ….
+<p></p> wraps paragraph, class = " " adds identifier 
+<a> </a> insert link, href = " " for link address (can use ./filename.html for relative local files) , body can have title, target = establishes how the link will open, "_blank" is new window, can wrap around pictures, can link to other sections on same webpage by href = #id name for <div> 
+<div> </div> divides page into sections (add two spaces of identation when you nest elements inside <div>)
+<span> contains small pieces of content like text on same line as other content 
+<em></em> emphasizes text 
+<strong></strong> boldens text
+<br> line break 
+
+<ul> </ul> unordered bullet-point list, with <li> </li> used to add elements in body 
+<ol> </ol> ordered numbered list 
+<dl> </dl> will establish a non-ordered list for details
+<dd> </dd> first ident: title/label 
+<dt> </dt> second ident: details about the title/label 
+
+<video> </video> requires src; width = and height = set dim, controls include play/pause for users; text in between wrap will appear when video fails
+
+<table></table> wraps all data in table 
+<tr> </tr> table row 
+<td> </td> add cells (column entries) into row, written in between <tr> </tr>, colspan = sets the number of cols the cell will span, rowspan = 
+<th> </th> headings for table, scope = will take "row" or "col" 
+<tbody> </tbody> divisor that contains non-heading cells of table 
+<thead> </thead> divisor contains only heading cells
+<tfoot> </tfoot> divisor to contain a row of summarizing details at the end, using <td> to add cells 
+
+<style> </style> lets you drop CSS code in-line; place in the <head>
+
+<blockquote> </blockquote> for long-standalone quotes 
+<q> </q> small quotes 
+<abbr title = " "> </abbr> is used to wrap an abbreviation with a clarifying title
+<cite> </cite> is used to highlight a text 
+<dfn title = "definition"> </dfn> 
+
+<code> </code> wraps code 
+<var> </var> wraps code variable 
+<samp> </samp> for code output 
+<kbd> </kbd> for user input 
+<pre> </pre> for preformative text where you wrap over anything where spacing and every character matters; used often to wrap <code> 
+
+<article> </article> used to add a stand-alone section of a webpage 
+<section> </section> can be used to split-up article 
+
+<figure> </figure> wraps a figure 
+<figcaption> </figcaption> used to caption a figure(wrapped inside <figure>) 
+
+<nav> </nav> used to wrap a section of navigation links, often inside is a list 
+
+
+
+GETTING SOCIAL MEDIA BUTTONS: 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+https://fontawesome.com/v4.7.0/icon/facebook
+
+
+link to styles: <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+<form> </form> wraps the form; it needs two attributes: action = " " to define the script the information should go to; method = get; post; where get is for non-confidential information and post is for more private, invisible/secure data. 
+<input> sets up the input methods, takes two important attributes: type = for the type of input; value = for default text in, say, the textbook input; types: 
+	"text": textbox 
+	"password": textbox with hidden values 
+	"checkbox" checked: checkbox with check being default 
+	"radio" with little checkbox buttons that, if lined up next to each other, you can only select one. make sure you title it inside the wrap
+	"submit": submit button 
+<textarea> </textarea> is a big text area, which can take row=, col= as attributes and inside wrap default text (for labeling questions or information on forms 
+<select> </select> sets up a drop-down box <option> </option> is used to wrap different options appearing on drop-down box; 

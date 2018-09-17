@@ -1,0 +1,71 @@
+Data Types 
+
+• INTEGER, a positive or negative whole number
+• TEXT, a text string
+• DATE, the date formatted as YYYY-MM-DD for the year, month, and day
+• REAL, a decimal value 
+• NULL
+
+
+Creating a table with conditions (row WILL NOT be added if a condition is not met) - id row sets id as primary identifier so no duplicates; unique same effect but not primary, default sets NULL to 'not Applicable' 
+	CREATE TABLE celebs ( 
+		id INTEGER PRIMARY KEY, 
+		name TEXT UNIQUE, 
+		date_of_birth TEXT NOT NULL, 
+		date_of_death TEXT DEFAULT 'Not Applicable', 
+	);
+
+Operators 
+• = equal to
+• != not equal to
+• > greater than
+• < less than
+• >= greater than or equal to
+• <= less than or equal to
+• IS NULL
+• IS NOT NULL 
+
+Meta-Characters 
+% means anything, for any number of times - "%a" for all things ending with a 
+_ means anything for one time 
+
+
+Clauses 
+CREATE TABLE name and param: datatypes for each col 
+INSERT INTO adds row 
+UPDATE tbl SET col = val WHERE cond; will update column values based on condition 
+ALTER TABLE tbl; lets you make an alteration like add column
+ADD COLUMN 
+DELETE FROM tbl WHERE 
+
+Queries 
+SELECT_FROM_
+SELECT_AS '_' FROM_
+SELECT DISTINCT_FROM_
+SELECT_FROM_WHERE_
+SELECT_FROM_WHERE_col_LIKE_' '  where LIKE can take patterns with metacharacters 
+SELECT_FROM_WHERE_col_BETWEEN_num/letter_AND_num/letter 
+		? BETWEEN two letters is not inclusive of the 2nd letter.
+		? BETWEEN two numbers is inclusive of the 2nd number.
+SELECT_FROM_WHERE_condition1_AND/OR_condition2
+SELECT_FROM_ORDER BY_year_DESC/ASC 
+LIMIT cap of how many rows can be screened; always at the end of the query 
+CASE WHEN_condition_THEN_value_ELSE_value_END_colname; this will add a new column to the data based on the if/else logic 
+
+Aggregates (Calculations)
+COUNT() number of rows 
+SUM() 
+MAX()/MIN()
+AVG() 
+ROUND() takes two args: col name and number of decimals to round to (inside parenth)
+	
+	SELECT COUNT (*)
+	FROM fake_apps; 
+	
+	SELECT ROUND(AVG(price), 2)
+	FROM fake_apps;
+	
+GROUP BY() comes after WHERE but before order-by or limit (example counts how many apps go by each price)
+	SELECT price, COUNT(*) 
+	FROM fake_apps
+GROUP BY price;
