@@ -59,7 +59,7 @@
 GETTING SOCIAL MEDIA BUTTONS: 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
-https://fontawesome.com/v4.7.0/icon/facebook
+https://www.w3schools.com/icons/google_icons_intro.asp <---- for icons! google and fontawesome
 
 
 link to styles: <link href="styles/style.css" rel="stylesheet" type="text/css">
