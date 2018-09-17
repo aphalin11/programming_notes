@@ -135,6 +135,58 @@ div {
 }
 
 
+
+
+LINKS LAYOUT 
+
+order matters - order of specificity no spaces before or after colon 
+a { }
+a:link { } default 
+a:visited { } link when already visited 
+a:hover { } link when hovering over 
+a:focus { } 
+a:active { } link in the moment is clicked 
+
+
+
+IMAGES, AUDIO, VIDEO 
+
+adjusting height will adjust width accordingly 
+
+img {
+  height: 200px;
+}
+
+image positioning 
+img {
+  display: block; puts the picture with text above or below it not around 
+}
+
+video OR audio {
+  src; use multiple source elements as fallback <source src = "earth.ogv" type = "video/ogg"> 
+  autoplay 
+  controls  
+  loop 
+  preload 
+  controls (for video only) 
+} 
+
+<audio  controls autoplay loop > 
+  <src> 
+  <src>
+
+iframe { 
+  src ; iframe lets you add a frame of a webpage embedded into your own website. 
+} 
+
+figure { } is often used to wrap media 
+
+*** raster images is pixelated images (bitmap) which loose quality with zooming 
+vector images uses mathematical lines, connecting it and preventing quality lost ***
+
+
+
+
 https://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/
 
 
