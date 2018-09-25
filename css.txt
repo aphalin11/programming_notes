@@ -185,6 +185,28 @@ figure { } is often used to wrap media
 vector images uses mathematical lines, connecting it and preventing quality lost ***
 
 
+FONT
+ 
+p { 
+text-indent: 20px; indents first line 
+text-shadow: 3px 6px 2px rgba(0, 0, 0, .3); 
+letter-spacing: ; 
+
+} 
+
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster"), url("lobster.woff") format("woff");
+}
+body {
+  font-family: "Lobster", "Comic Sans", cursive;
+}
+
+https://learn.shayhowe.com/html-css/working-with-typography/ 
+use multiple font-families as backup 
+https://fonts.google.com/ 
+safe fonts: arial, garamond, lucida sans, tahoma, trebuchet, courier new, 
+georgia, palatino linotype, times new roman, verdana 
 
 
 https://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/

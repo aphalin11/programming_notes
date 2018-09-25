@@ -73,3 +73,14 @@ link to styles: <link href="styles/style.css" rel="stylesheet" type="text/css">
 	"submit": submit button 
 <textarea> </textarea> is a big text area, which can take row=, col= as attributes and inside wrap default text (for labeling questions or information on forms 
 <select> </select> sets up a drop-down box <option> </option> is used to wrap different options appearing on drop-down box; 
+
+
+
+GRIDS 
+
+fluid grid rule: target / context (the size of the parent element or page) = desired percentage width
+https://alistapart.com/article/fluidgrids
+
+https://css-tricks.com/dont-overthink-it-grids/
+
+responsive grid: https://alistapart.com/article/responsive-web-design 
